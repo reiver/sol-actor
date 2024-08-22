@@ -25,15 +25,15 @@ contract Actor is Delegatable, PrimarilyIdentifiable {
 	// PUBLIC FUNCTIONS                                                                               //
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	function setActorName(string value) public onlyOwnerOrDelegate {
+	function setActorName(string memory value) public onlyOwnerOrDelegate {
 		_name = value;
 	}
 
-	function setActorSummary(string value) public onlyOwnerOrDelegate {
+	function setActorSummary(string memory value) public onlyOwnerOrDelegate {
 		_summary = value;
 	}
 
-	function setActorType(string value) public onlyOwnerOrDelegate {
+	function setActorType(string memory value) public onlyOwnerOrDelegate {
 		_type = value;
 	}
 
@@ -41,15 +41,15 @@ contract Actor is Delegatable, PrimarilyIdentifiable {
         // EXTERNAL VIEWS                                                                                 //
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	function actorName() public view returns (string) {
+	function actorName() public view returns (string memory) {
 		return _name;
 	}
 
-	function actorSummary() public view returns (string) {
+	function actorSummary() public view returns (string memory) {
 		return _summary;
 	}
 
-	function actorType() public view returns (string) {
+	function actorType() public view returns (string memory) {
 		return _type;
 	}
 }
