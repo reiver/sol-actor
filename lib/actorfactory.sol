@@ -15,8 +15,8 @@ contract ActorFactory {
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	function createActor() public returns (address) {
-		uint actorid = _actors.length;
+		uint actorid = actors.length;
 		Actor actor = new Actor(actorid);
-		_actors.push(actor);
+		actors.push(actor);
 	}
 }
