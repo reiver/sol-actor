@@ -1,7 +1,7 @@
 pragma solidity ^0.8.13;
 
 import "@reiver/delegatable/delegatable.sol";
-import "@reiver/identifiable/primarilyidentifiable.sol"
+import "@reiver/identifiable/primarilyidentifiable.sol";
 
 contract Actor is Delegatable, PrimarilyIdentifiable {
 
